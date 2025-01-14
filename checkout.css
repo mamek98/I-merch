@@ -1,0 +1,257 @@
+@import url('https://fonts.cdnfonts.com/css/samsung-sharp-sans');
+
+/*Global Styling*/
+html {
+    background-image: url('Images/loginpage.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+#main {
+    background-image: url('Images/productdetails.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+div {
+    border: 1px solid;
+    padding: 10px;
+    display: flex;
+    color: #008CBD;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    padding: 10px;
+    border: none;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*Product Detail */
+img {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goCenter {
+    flex-direction: column;
+    border-style: none;
+}
+
+#unitPrice, #unitQuantity, #unitSubtotal {
+    align-items: center;
+    padding: 20px;
+}
+
+#productImage {
+    flex: 2; /* How much space occupied */
+    padding: 20px;
+    text-align: left;
+    color: #008CBD;
+    flex-direction: column;
+    border-color: #00b1ef;
+}
+
+#productDetails {
+    flex: 5;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-right: none;
+    border-color: #00b1ef;
+}
+
+#productPrice {
+    flex: 5;
+    border-left: none;
+    border-color: #00b1ef;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+#paymentMethod {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+h4 {
+    font-family: 'Samsung Sharp Sans', sans-serif;
+    font-size: 1.6vw;
+}
+
+#productDetails h3 {
+    font-family: 'Samsung Sharp Sans', sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+    display: flex; /* Enable flexbox */
+    align-items: center;
+    font-weight: 450;
+}
+
+#productPrice {
+    font-family: 'Samsung Sharp Sans', sans-serif;
+    font-size: 1.3vw;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#productPrice p {
+    font-family: 'Samsung Sharp Sans', sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+    display: flex;
+    font-weight: 450;
+    align-items: center;
+    justify-content: center;
+}
+
+/*User Detail */
+h5 {
+    font-family: 'Samsung Sharp Sans', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 450;
+}
+
+#kulliyah {
+    font-family: 'Samsung Sharp Sans', sans-serif;
+    font-size: 1.4vw;
+    font-weight: 450;
+}
+
+/*Checkout Total */
+#top-box {
+    padding-bottom: 0px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: #00b1ef;
+    background-color: white;
+}
+
+#totalPrice {
+    font-size: xx-large;
+    font-weight: 900;
+    font-family: 'Samsung Sharp Sans', sans-serif;
+    border: none;
+    justify-content: center;
+}
+
+.checkout-button {
+    background-color: #00b1ef;
+    border: none;
+    padding: 17px;
+    color: white;
+    font-family: 'Samsung Sharp Sans', sans-serif;
+    font-weight: 700;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.checkout-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    background-color: #00e1ef;
+}
+
+#payment-box {
+    padding-bottom: 22px;
+    border: white;
+    background-color: white;
+}
+
+#checkout-box {
+    flex: 2;
+    flex-direction: column;
+    border-color: #00b1ef;
+    background-color: white;
+}
+
+/* Responsive Design for Tablets */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px; /* Adjust padding */
+        display: flex;
+
+    }
+
+    #productImage, #productDetails, #productPrice {
+        width: 100%; /* Full width */
+        padding: 10px; /* Adjust spacing */
+    }
+
+    img {
+        width: 100%; /* Ensure image adapts to smaller screens */
+    }
+
+    h4, h5, #kulliyah, #totalPrice {
+        font-size: 1.8vw; /* Adjust font size for tablets */
+    }
+    
+
+    .checkout-button {
+        width: 80px;
+        height: 25px; /* Smaller button for tablets */
+    }
+    #checkout-box {
+        padding: 10px; /* Adjust padding */
+        display: flex;
+        height: 3vh;
+    }
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    #productImage, #productDetails, #productPrice {
+        width: 100%; /* Full width */
+        padding: 5px;
+    }
+
+    h4, h5, #kulliyah, #totalPrice {
+        font-size: 4vw; /* Scale fonts for mobile */
+    }
+
+    img {
+        width: 100%;
+        height: auto; /* Ensure proper scaling */
+    }
+
+    .checkout-button {
+        width: 70px;
+        height: 20px; /* Smaller button for mobile */
+        padding: 10px;
+    }
+
+    #payment-box {
+        padding: 10px; /* Adjust padding */
+        display: flex;
+        
+    }
+
+    #checkout-box {
+        padding: 10px; /* Adjust padding */
+        display: flex;
+        height: 3vh;
+    }
+}

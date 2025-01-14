@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout Page</title>
+        <style>
+            #main{
+                border: none;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
+      
+        </head>
+        <link rel="stylesheet" href="checkout.css">
+
+        <body>
+            <!--Product Detail Container-->
+            <div id="main">
+            </div>
+            
+            <!--Payment Method-->
+            <div class="container">
+                <div style="flex-direction: column; padding: 0px; flex: 8; border-color: #00b1ef ">
+                    <div id="top-box">
+                        <h5 id="userName"> MUHAMMAD AZIM BIN MUSTAFA KHALIL 
+                            <p id="userContact">+601114549854</p>
+                        </h5> 
+                        <div id="kulliyah" style="margin-left:20px; width: 250px; border-style: none;">
+                            <p id="kulliyah"> KICT</p>
+                        </div>
+                    </div>
+
+                    <div id="payment-box">
+                        <h5 ><strong>Select Payment Method : </strong><br> <br>
+                            <input type="radio" id="cash" name="payment">
+                                <label for="cash">Cash</label>
+                            <input type="radio" id="online" name="payment">
+                                <label for="online">Online Bank</label>
+                        </h5>
+                    </div>
+                </div>
+
+
+                <!--Checkout Total-->
+                <div id="checkout-box" >
+                    <h5 style="font-weight: 450;">Total : <br>
+                        RM
+                    </h5>
+                    <div id="totalPrice">80.00</div>
+                    
+
+                    <div  style="border: none; justify-content: space-between;">
+                        <!--Go to thank you page-->
+                        <a href="TQ_page.html" target="content">
+                            <button class="checkout-button" id="checkoutButton" > 
+                            Checkout
+                            </button>
+                        </a>
+                        <!--Go to Cart page-->
+                        <a href="cart.html" target="content">
+                        <button class="checkout-button" id="cancelOrder"  >
+                            Cancel
+                        </button> 
+                        </a>
+                    </div>
+                </div>
+            </div> 
+
+            <script src="checkoutScript.js"></script>
+            <script src="cartScript.js"></script>
+
+        </body>
+</html>

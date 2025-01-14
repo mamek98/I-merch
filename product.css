@@ -1,0 +1,151 @@
+@import url('https://fonts.cdnfonts.com/css/samsung-sharp-sans');
+
+/* General Reset */
+body {
+    font-family: 'Samsung Sharp Sans', sans-serif;
+    margin: 0;
+}
+
+#main {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    color: #008cbd;
+    padding-left: 10px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+/* Product Container */
+#product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Responsive grid layout */
+    justify-content: start; /* Center grid items horizontally */
+    gap:120px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Product Card Styling */
+.product-card {
+    width: 100%; /* Make the card width responsive */
+    max-width: 300px; /* Optional: Set a maximum width */
+    border: 1px solid #00b1ef;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto; /* Center-align individual cards */
+    position: relative;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(131deg, rgba(195,255,255,1) 0%, rgba(93,225,255,1) 32%, rgba(250,250,250,1) 93%);
+}
+
+/* Header Section */
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #00b1ef;
+}
+
+.card-header .logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.card-header .card-title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #008CBD; /* Deep blue text */
+}
+
+/* Product Image Wrapper */
+.product-image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 125%; /* 4:5 aspect ratio (4/5 * 100 = 80%) */
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0; /* Placeholder background */
+}
+
+/* Actual Image */
+.product-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container while preserving its aspect ratio */
+}
+
+/* Card Content */
+.card-content {
+    margin-top: 20px;
+    padding-bottom: 0;
+    border-top: 1px solid #00b1ef;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #007bff; /* Deep blue text */
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #product-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust column size for smaller devices */
+        gap: 20px;
+        display:flex ;
+        flex-direction: column;
+    }
+
+    .product-card {
+        max-width: 200px; /* Further reduce max width */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #product-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust column size for mobile screens */
+        gap: 20px;
+        display:flex ;
+        flex-direction: column;
+    }
+
+    .product-card {
+        max-width: 180px; /* Smallest card size for mobile */
+    }
+}

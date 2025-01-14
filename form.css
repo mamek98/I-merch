@@ -1,0 +1,67 @@
+@import url('https://fonts.cdnfonts.com/css/samsung-sharp-sans');
+
+.center{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+h3{
+   font-family: 'Samsung Sharp Sans', sans-serif;
+   letter-spacing: 5px;
+   font-size: 16px;
+   text-align: center;
+   color:#00e1ef;
+   padding-bottom: 20px;
+  
+}
+   
+form {    
+   font-weight: bold;
+   text-align: center;
+   color: white ;
+   padding-top:22px;
+   padding-left: 22px;
+   padding-right: 22px;
+   padding-bottom: 22px;
+   border-radius: 8px 8px 8px 8px;
+   margin:0px auto;
+   background-color: rgb(254, 255, 254);
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+   
+ }
+   
+   /* borang.login */
+   form.pendek, h3.pendek {
+	  width:250px;
+
+   
+   }
+   
+   /* borang selain login */
+   form.panjang, h3.panjang {
+	   width:290px;
+
+   }
+   
+   /* cantumkan sekali */
+   input[type="text"],  
+   input[type="password"],
+
+   select{
+	   
+	font-family:'Samsung Sharp Sans', sans-serif;
+	font-size: 13px;
+	color:black;
+	letter-spacing: 2px;
+	width: 200px;
+	padding:5px;
+	margin:5px;
+	background-color:rgb(255, 255, 255);
+	border: 0.5px solid rgba(0, 247, 255, 0.8);
+	border-radius: 3px 3px 3px 3px;
+
+   }
+   
+ 

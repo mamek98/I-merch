@@ -1,0 +1,13 @@
+<div class="product-card">
+                <div class="card-header">
+                    <img src="Images/images (1).jpeg" alt="ICTSS Logo" class="logo">
+                    <span class="card-title">ICTSS</span>
+                </div>
+                <div class="product-image-wrapper">
+                <img src="Images/image4.jpg" alt="IIUM Robe" class="product-image">
+                </div>
+                <div class="card-content">
+                    <h3 class="product-name">IIUM Robe</h3>
+                    <p class="product-price">RM 80.00</p>
+                </div>
+            </div>

@@ -1,0 +1,14 @@
+[
+    { "id": 1, "name": "IIUM Robe", "seller":"ICTSS","sellerimage":"Images/ictss.jpeg", "productimage": "Images/image1.jpg", "description": "This is product 1", "price": "RM 80.00" },
+    { "id": 2, "name": "IIUM Hat","seller":"IIUM", "sellerimage":"Images/ictss.jpeg", "productimage": "Images/image2.jpg", "description": "This is product 2.", "price": "RM 20.00" },
+    { "id": 3, "name": "IIUM Tie", "seller":"IIUM","sellerimage":"Images/ictss.jpeg", "productimage": "Images/image3.jpg", "description": "This is product 3.", "price": "RM 30.00" },
+    { "id": 4, "name": "IIUM Robe 2.0", "seller":"ICTSS","sellerimage":"Images/ictss.jpeg", "productimage": "Images/image1.jpg", "description": "This is product 1", "price": "RM 80.00" },
+    { "id": 5, "name": "IIUM Hat 2.0 ","seller":"IIUM", "sellerimage":"Images/ictss.jpeg", "productimage": "Images/image2.jpg", "description": "This is product 2.", "price": "RM 20.00" },
+    { "id": 6, "name": "IIUM Tie 2.0 ", "seller":"IIUM","sellerimage":"Images/ictss.jpeg", "productimage": "Images/image3.jpg", "description": "This is product 3.", "price": "RM 30.00" },
+    { "id": 7, "name": "IIUM Robe", "seller":"ICTSS","sellerimage":"Images/ictss.jpeg", "productimage": "Images/image1.jpg", "description": "This is product 1", "price": "RM 80.00" },
+    { "id": 8, "name": "IIUM Hat","seller":"IIUM", "sellerimage":"Images/ictss.jpeg", "productimage": "Images/image2.jpg", "description": "This is product 2.", "price": "RM 20.00" },
+    { "id": 9, "name": "IIUM Tie", "seller":"IIUM","sellerimage":"Images/ictss.jpeg", "productimage": "Images/image3.jpg", "description": "This is product 3.", "price": "RM 30.00" },
+    { "id": 10, "name": "IIUM Robe 2.0", "seller":"ICTSS","sellerimage":"Images/ictss.jpeg", "productimage": "Images/image1.jpg", "description": "This is product 1", "price": "RM 80.00" },
+    { "id": 11, "name": "IIUM Hat 2.0 ","seller":"IIUM", "sellerimage":"Images/ictss.jpeg", "productimage": "Images/image2.jpg", "description": "This is product 2.", "price": "RM 20.00" },
+    { "id": 12, "name": "IIUM Tie 2.0 ", "seller":"IIUM","sellerimage":"Images/ictss.jpeg", "productimage": "Images/image3.jpg", "description": "This is product 3.", "price": "RM 30.00" }
+]

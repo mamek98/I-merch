@@ -1,0 +1,35 @@
+@import url('https://fonts.cdnfonts.com/css/samsung-sharp-sans');
+
+button {
+  font-family: 'Samsung Sharp Sans', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  color:white ;
+  letter-spacing: 1px;
+  
+  width: 96px;
+  padding :5px 11px;
+  border-radius: 3px;
+  border:0.5px solid #91D1E1;
+  margin-top: 15px;
+  background-color:rgba(0, 177, 239) ;
+  background-position: 88px;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.register{
+  width: 200px;
+
+}
+
+
+button:hover {
+  transform: scale(1.01); /* Slightly enlarge on hover */
+   color:#00b1ef;
+   border:1px solid #91D1E1;
+   background-color: white;
+   cursor : pointer;
+}
+
+

@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrolling */       
+            background-image: url('Images/loginpage.png');
+            background-size: cover;
+            background-position: center center;       
+        }
+        
+        iframe {
+            border: none;
+            display: block;
+            width: 100%;
+        }
+        
+        iframe.header {
+            height: 60px; /* Header height */
+        }
+        
+        iframe.content {
+            height: calc(100vh - 60px); /* Content height minus header */
+        }
+        </style>
+</head>
+<body>
+    <!-- Embed the header -->
+    <iframe class="header" src="headers.html" name="header"></iframe>
+    
+    <!-- Embed the product content -->
+    <iframe  class="content" src="home.html"  name="content" > </iframe>
+
+    
+
+    
+
+</body>
+</html>

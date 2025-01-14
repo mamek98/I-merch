@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cart</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="button2.css">
+
+
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/samsung-sharp-sans');
+            *{
+                box-sizing: border-box;
+            }
+            html{
+                font-family: 'Samsung Sharp Sans', sans-serif;
+                background-image: url('Images/loginpage.png');
+                background-size: cover;
+                background-position: center center;
+               
+                
+            }
+
+            .button{
+                margin-left:50px;
+            }
+            ul{
+                list-style-type: none;
+            }
+            li{
+                margin: 3px;
+            }
+
+            
+            .cartContainer{
+              
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items:center;
+                margin: 50px;
+                padding: 50px;
+                border: solid, thin;
+                border-radius: 7px;
+                border-color: #00b1ef;
+                background-image: url('Images/productdetails.png');
+                background-position: center center;
+                
+            .quantityButton{
+                width:10px;
+            }
+            img{
+                
+            }
+            }
+            .cartItem{
+                display: flex;
+                border: solid, thin;
+                border-radius: 7px;
+                border-color: #00b1ef;
+                padding: 20px;
+                margin: 20px 0px;
+                background-image: none;
+                flex-direction: row;
+                width: 100%;
+            }
+            .add-qty, .sub-qty{
+                height: 20px;
+                margin: 0px 3px;
+            }
+            .itemName, .ItemPrice, .itemQuantity{
+                display: inline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center; color: #008cbd;" >Cart</h1>
+        <button class="button" id="reset">Reset Cart List</button>
+
+        <div class="cartContainer" ></div>
+        <button class="button" id="paynow-btn">Pay Now</button>
+        <script src="cartScript.js"></script>
+    </body>
+</html>
